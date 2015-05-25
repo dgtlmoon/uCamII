@@ -14,7 +14,8 @@ This is an Arduino library for 4D System's uCam-II http://4dsystems.com.au/produ
 ## Tune it
 - uCamII.h ```#define UCAMII_BUF_SIZE 24``` , change this on larger processors or smaller on memory lacking processors (this is the size without the packet headers)
 - uCamII.cpp set the various #define's for what you require, such as _INITIAL_COMMAND
-- 
+
+
 ### Overview
 
 The library communicates with the µCam-II and sets all parameters, each chunk of data is returned via UCAMII::getData and waits in a memory buffer, ICAMII:getData returns the number of bytes that are in the buffer (maximum of UCAMII_BUF_SIZE)
@@ -23,6 +24,9 @@ This library built from the official datasheet http://www.4dsystems.com.au/produ
 
 
 ### Example code 
+
+Code that outputs the hex bytes to a debug interface on SoftwareSerial (SoftwareSerial not required, example only)
+
 ```
 #include <uCamII.h>
 #include <SoftwareSerial.h>
