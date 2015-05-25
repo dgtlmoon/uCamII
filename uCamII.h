@@ -35,10 +35,6 @@ private:
     int wait_for_sync();
     int attempt_sync();
     boolean wait_for_bytes(byte command[6]);
-    boolean cam_sync;
-    char pin[5];
-    byte state;
-    byte onOffPin;
 };
 
 #endif
