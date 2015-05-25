@@ -1,4 +1,4 @@
-# Arduino library fo 4d Systems's uCamII TTL Camera
+# Arduino library fo 4D Systems's uCamII TTL Camera
 
 This is an Arduino library for 4D System's uCam-II http://4dsystems.com.au/product/uCAM_II/
 
