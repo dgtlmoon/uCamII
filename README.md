@@ -74,4 +74,13 @@ void loop() {
 ```
 
 Included also is a python script to convert the dbeug output bytes back to a JPEG, save the output of the terminal (make sure no pieces are missing, compare last byte values etc) to a text file, then
-```cat output.txt|./hex-to-bytes.py``` and you should have a output.jpeg file
+```
+python ./hex-to-bytes.py < output.txt
+``` 
+and you should have a output.jpeg file
+
+or for example
+```
+echo "0x01 0x02 0x03"| python ./hex-to-bytes.py
+```
+
