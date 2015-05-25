@@ -4,6 +4,8 @@ This is an Arduino library for 4D System's uCam-II http://4dsystems.com.au/produ
 
 **NOTE!** This library assumes your camera is on the hardware UART connection and you will debug via the softwareSerial connection
 
+Tested successfully to 115,000 BPS on an Arduino Pro Mini
+
 ## Todo 
 - Checksum check on each received packet
 - More error detection and termination
