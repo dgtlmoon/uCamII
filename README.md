@@ -2,13 +2,20 @@
 
 This is an Arduino library for 4D System's uCam-II http://4dsystems.com.au/product/uCAM_II/
 
-Todo 
+**NOTE!** This library assumes your camera is on the hardware UART connection and you will debug via the softwareSerial connection
+
+## Todo 
 - Checksum check on each received packet
 - More error detection and termination
 - Timeout/return if no response received
+- Perhaps there's a way to not require the memory buffer and simply stream from the camera, unsure. Seems to be a performance tradeoff
+- Pass a pointer for the waitBytes instead of a copy of the bytes
+
+## Tune it
+- uCamII.h ```#define UCAMII_BUF_SIZE 24``` , change this on larger processors or smaller on memory lacking processors (this is the size without the packet headers)
 
 
-
+### Example code 
 ```
 #include <uCamII.h>
 #include <SoftwareSerial.h>
